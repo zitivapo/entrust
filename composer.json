@@ -1,7 +1,14 @@
 {
     "name": "zizaco/entrust",
     "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
-    "keywords": ["laravel","illuminate","auth","roles","acl","permission"],
+    "keywords": [
+        "laravel",
+        "illuminate",
+        "auth",
+        "roles",
+        "acl",
+        "permission"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -22,10 +29,10 @@
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "illuminate/console": "~5.0",
-        "illuminate/support": "~5.0",
-        "illuminate/cache": "~5.0"
+        "php": "^7.2.5",
+        "illuminate/console": "~5.0|~6.0",
+        "illuminate/support": "~5.0|~6.0",
+        "illuminate/cache": "~5.0|~6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.1",
@@ -41,12 +48,12 @@
             "Zizaco\\Entrust\\": "src/Entrust/"
         }
     },
-    "extra":{
-        "laravel":{
-            "providers":[
+    "extra": {
+        "laravel": {
+            "providers": [
                 "Zizaco\\Entrust\\EntrustServiceProvider"
             ],
-            "aliases":{
+            "aliases": {
                 "Entrust": "Zizaco\\Entrust\\EntrustFacade"
             }
         }
